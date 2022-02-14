@@ -1,5 +1,6 @@
 const createTabs = (() => {
-    const btnContainer = document.createElement('div');;
+    const btnContainer = document.createElement('div');
+    btnContainer.classList.add('btn-container');
     const content = document.querySelector('#content');
     const createButtons = () => {
         let homeButton = document.createElement('button');
