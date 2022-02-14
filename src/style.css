@@ -8,6 +8,7 @@ body {
     background-color: var(--background-color);
     font-family: 'var(--arimo-font)', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
