@@ -1,3 +1,10 @@
 import './style.css';
+import { homePage } from './addHomePage.js'
 
-console.log("Hello World!");
+function createHomePage() {
+    homePage.addHeader();
+    homePage.addImage();
+    homePage.addText();
+}
+
+createHomePage();
