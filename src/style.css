@@ -6,8 +6,34 @@
 
 body {
     background-color: var(--background-color);
+    font-family: 'var(--arimo-font)', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    margin: 0;
+}
+
+#content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50vw;
+    min-height: 100vh;
+}
+
+.description-text {
+    max-width: 600px;
+}
+
+.title-header{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.home-image {
+    width: 90%;
+    height: auto;
 }
 
