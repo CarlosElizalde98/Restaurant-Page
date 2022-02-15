@@ -94,7 +94,7 @@ body {
 }
 
 .menu-image {
-    width: 250px;
+    width: 100%;
     height: auto;
     background-position: 50% 50%;
     background-repeat: no-repeat;

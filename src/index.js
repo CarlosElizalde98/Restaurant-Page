@@ -1,7 +1,8 @@
 import './style.css';
 import { homePage } from './addHomePage.js';
 import { createTabs } from './addTabs.js';
-import { menuPage } from './addMenupage';
+import { menuPage } from './addMenupage.js';
+import {contactsPage } from './addContacts.js';
 
 const constructPage = (() => {
     createTabs.createButtons();
