@@ -61,7 +61,7 @@ body {
     color: black;
 }
 
-.beverage-header {
+.beverage-header, .sides-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +78,6 @@ body {
 .beverage-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-gap: 10px 90px;
     margin: 2%;
 }
@@ -87,4 +86,12 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
+}
+
+.sides-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px 30px;
+    margin: 2%;
 }
