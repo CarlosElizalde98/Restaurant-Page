@@ -26,6 +26,11 @@ function createMenuPage() {
     menuPage.addDesserts();
 }
 
+function createContactsPage() {
+    contactsPage.addContactsHeading();
+    contactsPage.addContacts();
+}
+
 function switchPages() {
     const btns = document.querySelectorAll('.menu-selector');
     btns.forEach((btn) => {
@@ -45,5 +50,10 @@ function switchPage(button) {
     else if (button.innerText === "Menu"){
         content.innerHTML = "";
         createMenuPage();
+    }
+
+    else if (button.innerText === "Contact Us"){
+        content.innerHTML = "";
+        createContactsPage();
     }
 }

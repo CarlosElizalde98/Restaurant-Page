@@ -4,7 +4,7 @@ const homePage = (() => {
 
     const addHeader = () => {
         let heading = document.createElement('h1');
-        heading.innerText = "Ratouille Restaurant";
+        heading.innerText = "Ratatouille Restaurant";
         heading.classList.add('title-header')
         content.appendChild(heading);
     };
