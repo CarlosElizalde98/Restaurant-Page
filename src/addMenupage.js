@@ -123,7 +123,40 @@ const menuPage = (() => {
         content.appendChild(entreesHeader);
     }
 
-    return { addMenuHeading, addBeverageMenu, addEntrees };
+    const addDesserts = () => {
+        const dessertHeader = document.createElement('h2');
+        dessertHeader.classList.add('dessert-header');
+        const dessertContainer = document.createElement('div');
+        dessertContainer.classList.add('dessert-container');
+
+        dessertHeader.innerText = "Desserts";
+
+        let dessertOneText = "Creme Brulee";
+        let dessertOneLink = "https://cdn.pixabay.com/photo/2017/11/11/21/05/food-2940496_960_720.jpg";
+        let dessertOneAttrb = "Creme Brulee Dessert";
+        let dessertItemOne = _createItem(dessertOneLink, dessertOneAttrb, dessertOneText);
+
+        dessertContainer.appendChild(dessertItemOne);
+
+        let dessertTwoText = "Souffle";
+        let dessertTwoLink ="https://cdn.pixabay.com/photo/2020/03/17/19/56/orange-souffle-cake-4941689_960_720.jpg";
+        let dessertTwoAttrb = "Souffle Dessert";
+        let dessertItemTwo = _createItem(dessertTwoLink, dessertTwoAttrb, dessertTwoText);
+
+        dessertContainer.appendChild(dessertItemTwo);
+
+        let dessertThreeText = "Strawberry Eclair";
+        let dessertThreeLink = "https://cdn.pixabay.com/photo/2018/05/01/18/21/eclair-3366430_960_720.jpg";
+        let dessertThreeAttrb = "Strawberry Eclair Dessert";
+        let dessertItemThree = _createItem(dessertThreeLink, dessertThreeAttrb, dessertThreeText );
+
+        dessertContainer.appendChild(dessertItemThree);
+        
+        dessertHeader.appendChild(dessertContainer);
+        content.appendChild(dessertHeader);
+    }
+
+    return { addMenuHeading, addBeverageMenu, addEntrees, addDesserts };
 })();
 
 export{ menuPage }

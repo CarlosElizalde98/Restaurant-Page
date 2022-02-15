@@ -22,6 +22,7 @@ function createMenuPage() {
     menuPage.addMenuHeading();
     menuPage.addBeverageMenu();
     menuPage.addEntrees();
+    menuPage.addDesserts();
 }
 
 function switchPages() {
