@@ -18,9 +18,10 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    max-width: 50vw;
+    width: 50vw;
+    min-width: 30vw;
     min-height: 100vh;
     border-radius: 5px;
 }
@@ -58,4 +59,32 @@ body {
 .menu-selector:hover {
     background-color: white;
     color: black;
+}
+
+.beverage-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 75%;
+}
+
+.beverage-header h2 #text{
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.beverage-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px 90px;
+    margin: 2%;
+}
+
+.menu-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
 }
