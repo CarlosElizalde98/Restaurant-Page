@@ -20,7 +20,6 @@ const menuPage = (() => {
 
         let beverageItemOneText = "Chardonnay Wine";
         let bevImageOneLink = 'https://cdn.pixabay.com/photo/2017/06/16/10/32/wine-2408620_960_720.jpg';
-        // Photo by <a href="https://unsplash.com/@jeffsiepman?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeff Siepman</a> on <a href="https://unsplash.com/s/photos/wine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         let bevImageOneAttrb = "Chardonnay Wine";
         let bevItemOne = _createItem(bevImageOneLink, bevImageOneAttrb, beverageItemOneText );
 
@@ -70,27 +69,61 @@ const menuPage = (() => {
         return item;
     }
 
-    const addSides = () => {
-        let sidesHeader = document.createElement('h2');
-        sidesHeader.classList.add('sides-header');
-        let sidesContainer = document.createElement('div');
-        sidesContainer.classList.add("sides-container");
+    const addEntrees = () => {
+        let entreesHeader = document.createElement('h2');
+        entreesHeader.classList.add('entrees-header');
+        let entreesContainer = document.createElement('div');
+        entreesContainer.classList.add("entrees-container");
 
-        sidesHeader.innerText = "Sides";
+        entreesHeader.innerText = "Entrées";
 
         let sideOneText = "Salmon Mignon";
         let sideOneImageLink = "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_960_720.jpg";
         let sideOneImageAttrb = "Salmon Mignon";
         let sideItemOne = _createItem(sideOneImageLink, sideOneImageAttrb, sideOneText);
 
-        sidesContainer.appendChild(sideItemOne);
+        entreesContainer.appendChild(sideItemOne);
 
+        let sideTwoText = "Ratatouille";
+        let sideTwoLink = "https://cdn.pixabay.com/photo/2020/06/19/08/27/ratatouille-5316205_960_720.jpg";
+        let sideTwoAttrb = "Ratatouille Dish";
+        let sideItemTwo = _createItem(sideTwoLink, sideTwoAttrb, sideTwoText);
 
-        sidesHeader.appendChild(sidesContainer);
-        content.appendChild(sidesHeader);
+        entreesContainer.appendChild(sideItemTwo);
+
+        let sideThreeText = "Spaghetti Carbonara";
+        let sideThreeLink ="https://cdn.pixabay.com/photo/2015/04/08/13/13/pasta-712664_960_720.jpg";
+        let sideThreeAttrb = "Spaghetti Carbonara";
+        let sideItemThree = _createItem(sideThreeLink, sideThreeAttrb, sideThreeText );
+
+        entreesContainer.appendChild(sideItemThree);
+
+        let sideFourText = "Linguine Pasta";
+        let sideFourLink = "https://cdn.pixabay.com/photo/2021/05/18/15/15/pasta-6263653_960_720.jpg";
+        let sideFourAttrb = "Linguine Pasta";
+        let sideFourItem = _createItem(sideFourLink, sideFourAttrb, sideFourText);
+
+        entreesContainer.appendChild(sideFourItem);
+
+        let sideFiveText = "Ravioli";
+        let sideFiveLink = "https://cdn.pixabay.com/photo/2020/06/07/09/57/pasta-5269699_960_720.jpg";
+        let sideFiveAttrb = "Ravioli Dish";
+        let sideFiveItem = _createItem(sideFiveLink, sideFiveAttrb, sideFiveText);
+
+        entreesContainer.appendChild(sideFiveItem);
+
+        let sideSixText = "Baguette";
+        let sideSixLink = "https://cdn.pixabay.com/photo/2017/06/23/23/57/bread-2436370_960_720.jpg";
+        let sideSixAttrb= "Baguette Meal";
+        let sideSixItem = _createItem(sideSixLink, sideSixAttrb, sideSixText);
+
+        entreesContainer.appendChild(sideSixItem);
+
+        entreesHeader.appendChild(entreesContainer);
+        content.appendChild(entreesHeader);
     }
 
-    return { addMenuHeading, addBeverageMenu, addSides };
+    return { addMenuHeading, addBeverageMenu, addEntrees };
 })();
 
 export{ menuPage }
