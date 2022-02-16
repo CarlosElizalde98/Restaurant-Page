@@ -123,4 +123,12 @@ body {
     border-radius: 12px;
     width: 300px;
     padding: 12px;
+    margin: 12px;
+    flex: 1 0 100%;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
