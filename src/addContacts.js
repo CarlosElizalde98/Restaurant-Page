@@ -21,6 +21,20 @@ const contactsPage = (()=> {
         let contactCardOne = _createContactCard(contactNameOne, titleOne, messageOne);
         contactsContainer.appendChild(contactCardOne);
 
+        let contactNameTwo = "Linguine";
+        let titleTwo = "Server";
+        let messageTwo = "linguineguy@example.com";
+
+        let contactCardTwo = _createContactCard(contactNameTwo, titleTwo, messageTwo);
+        contactsContainer.appendChild(contactCardTwo);
+
+        let contactNameThree = "Gusteau";
+        let titleThree = "Ghost Sous Chef";
+        let messageThree = "imaginaryGusteau@example.com";
+
+        let contactCardThree = _createContactCard(contactNameThree, titleThree, messageThree);
+        contactsContainer.appendChild(contactCardThree);
+
         content.appendChild(contactsContainer);
     }
 
